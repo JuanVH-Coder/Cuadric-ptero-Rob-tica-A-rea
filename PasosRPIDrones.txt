@@ -1,0 +1,15 @@
+1.usuario: jose
+2.clave: 12345678
+3.sudo apt update
+4.sudo apt upgrade
+5.sudo apt install libjpeg62-turbo-dev
+6.sudo ln -s /usr/include/linux/videodev2.h /usr/include/linux/videodev.h
+7.cd ~
+8.git clone https://github.com/jacksonliam/mjpg-streamer.git
+9.cd mjpg-streamer/mjpg-streamer-experimental
+10.sudo apt install cmake
+11.cd ~/mjpg-streamer/mjpg-streamer-experimental
+make
+12.	cd mjpg-streamer/
+13.	cd mjpg-streamer-experimental/
+14.	./mjpg_streamer -i "./input_uvc.so -d /dev/video0 -r 640x480 -f 30" -o "./output_http.so -p 8080 -w ./www"
